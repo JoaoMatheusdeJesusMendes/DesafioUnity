@@ -21,13 +21,13 @@ public class Animações : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
     //Ativação da animação
-        if(other.gameObject.layer == 8 && aberta == true)
+        if(other.gameObject.layer == 8 && aberta)
         {
             fechando.Play();
             porta.transform.Rotate(0, 82.178f, 0);
             aberta = false;
         }
-        else if(other.gameObject.layer == 8 && aberta == false)
+        else if(other.gameObject.layer == 8 && !aberta)
         {
             porta.transform.Rotate(0, -82.178f, 0);
             aberta = true;

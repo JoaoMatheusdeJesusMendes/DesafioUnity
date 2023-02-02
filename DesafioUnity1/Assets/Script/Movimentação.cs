@@ -47,7 +47,6 @@ public class Movimentação : MonoBehaviour
         {
             //para a musica
             andar.Pause();
-            Debug.Log("Aqui");
         }
     }
 }
